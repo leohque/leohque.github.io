@@ -21,6 +21,12 @@ body {
   font-size:12px;
 }
 
+.flex-center {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
 a {
   color:#73AA25;
   text-decoration:none;
@@ -65,20 +71,6 @@ a:hover {
   text-align:center;
 }
 
-.leftcol {
-  width:40%;
-  display:inline-block;
-  text-align:left;
-  margin-left:5%;
-}
-
-.rightcol {
-  width:40%;
-  display:inline-block;
-  text-align:right;
-  margin-right:5%;
-}
-
 #social-links {
   padding:0;
   list-style:none;
@@ -87,6 +79,11 @@ a:hover {
 #social-links li {
   display:inline-block;
   font-size:40px;
-  padding:0 5px
+  padding:0 5px;
 }
 
+@media only screen and (max-width: 768px) {
+  .card {
+    width:300px;
+  }
+}
