@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:600|Open+Sans:300,600&display=swap');
 
-ul {
-  list-style:none;
-}
-
-h1, h2 {
-  font-family: 'Raleway', sans-serif;
-  color:#19213D;
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
   background-color:#26183a;
@@ -17,14 +8,14 @@ body {
   font-size:14px;
 }
 
-.smaller-font {
-  font-size:12px;
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
+  color:#19213D;
 }
 
-.flex-center {
-  display:flex;
-  justify-content:center;
-  align-items:center;
+
+ul {
+  list-style:none;
 }
 
 a {
@@ -37,6 +28,20 @@ a:hover {
   color:#9AE19D;
   transition:color 0.5s;
 }
+
+/* Utilities */
+
+.smaller-font {
+  font-size:12px;
+}
+
+.flex-center {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* Button */
 
 .btn-green {
   background-color:#73AA25;
@@ -51,6 +56,7 @@ a:hover {
   color:white;
 }
 
+/* Avatar */
 
 .profile-pic {
   width:200px;
@@ -60,6 +66,8 @@ a:hover {
 .img-round {
   border-radius:50%;
 }
+
+/* Card */
 
 .card {
   width:420px;
@@ -82,8 +90,10 @@ a:hover {
   padding:0 5px;
 }
 
+/* Responsive Queries */
+
 @media only screen and (max-width: 768px) {
   .card {
-    width:300px;
+    width:80%;
   }
 }
