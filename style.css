@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color:#26183a;
+  background-color:#261831;
   background-image:linear-gradient(#442a68,#261831);
   color:rgb(10,10,10);
   font-size:14px;
@@ -67,17 +67,6 @@ a:hover {
   border-radius:50%;
 }
 
-/* Card */
-
-.card {
-  width:420px;
-  background-color:rgb(240,240,240);
-  border-radius:3px;
-  padding:24px;
-  box-shadow:0 5px 4px rgba(142,220,230,0.1);
-  margin:16px auto;
-  text-align:center;
-}
 
 #social-links {
   padding:0;
