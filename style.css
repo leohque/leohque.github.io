@@ -64,6 +64,26 @@ a {
 
 @media only screen and (max-width: 768px) {
 
+  .header {
+    align-items:center !important;
+    flex-direction:column;
+  }
+
+  .descr {
+    text-align:center;
+    margin:0 !important;
+  }
+
+  .descr p {
+    margin:0;
+  }
+
+  .side-info {
+    width:100% !important;
+    text-align: center !important;
+    padding:0 !important;
+  }
+
   h1 {
     font-size:42px;
   }
