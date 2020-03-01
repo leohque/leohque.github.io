@@ -4,8 +4,11 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color:#261831;
   background-image:linear-gradient(#442a68,#261831);
+  background-repeat:no-repeat;
   color:rgb(10,10,10);
   font-size:14px;
+  height:100vh;
+  text-shadow: 0 1px 0 #000;
 }
 
 h1, h2 {
@@ -19,14 +22,8 @@ ul {
 }
 
 a {
-  color:#73AA25;
   text-decoration:none;
   font-weight:600;
-}
-
-a:hover {
-  color:#9AE19D;
-  transition:color 0.5s;
 }
 
 /* Utilities */
@@ -35,32 +32,11 @@ a:hover {
   font-size:12px;
 }
 
-.flex-center {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-
-/* Button */
-
-.btn-green {
-  background-color:#73AA25;
-  padding:5px 15px;
-  color:white;
-  border-radius:3px;
-  transition:background-color 0.5s;
-}
-
-.btn-green:hover {
-  background-color:#9AE19D;
-  color:white;
-}
-
 /* Avatar */
 
 .profile-pic {
-  width:200px;
-  height:200px;
+  width:150px;
+  height:150px;
 }
 
 .img-round {
@@ -74,15 +50,29 @@ a:hover {
 }
 
 #social-links li {
-  display:inline-block;
-  font-size:40px;
+  display:inline;
+  font-size:36px;
   padding:0 5px;
+}
+
+/* Modal */
+.modal-title {
+  font-size:16px;
 }
 
 /* Responsive Queries */
 
 @media only screen and (max-width: 768px) {
-  .card {
-    width:80%;
+
+  h1 {
+    font-size:42px;
+  }
+
+  .attrs {
+    font-size:13px;
+  }
+
+  .side-info {
+    flex-grow:1;
   }
 }
