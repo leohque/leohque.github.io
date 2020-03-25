@@ -63,6 +63,15 @@ a {
   padding:0 5px;
 }
 
+#social-links li a {
+  color: #28a745;
+  transition: color 0.2s;
+}
+
+#social-links li a:hover {
+  color: #218838;
+}
+
 /* Modal */
 .modal-title {
   font-size:16px;
