@@ -8,7 +8,6 @@ body {
   color:rgb(10,10,10);
   font-size:14px;
   height:100vh;
-  text-shadow: 0 1px 0 #000;
 }
 
 h1, h2 {
@@ -24,6 +23,15 @@ ul {
 a {
   text-decoration:none;
   font-weight:600;
+}
+
+.descr {
+  text-shadow: 0 1px 0 #000;
+}
+
+.card {
+  width:30%;
+  text-align:center;
 }
 
 /* Utilities */
@@ -62,7 +70,17 @@ a {
 
 /* Responsive Queries */
 
+@media only screen and (max-width: 1200px) {
+  .card {
+    width:80%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
+
+  .card {
+    width:100%;
+  }
 
   .header {
     align-items:center !important;
