@@ -1,1 +1,1 @@
-https://leohque.github.io/profile/
+https://leohque.github.io/
