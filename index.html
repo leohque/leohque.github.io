@@ -10,86 +10,128 @@
 </head>
 
 <body>
-  <div class="header d-flex justify-content-center align-items-end flex-wrap">
-    <div class="descr m-3 p-3 text-right">
-      <img src="images/leo-sq.jpg" class="img-round profile-pic shadow" alt="leohque user photo">
-      <h1 class="text-white">
-        Hello,<br>I'm Leo 🧑‍🌾
-      </h1>
-      <p class="smaller-font text-white">
-        🌎📍<em>Boston, MA</em>
-      </p>
-      <p class="smaller-font text-white">
-        EN 🇺🇸 / ES 🇻🇪 / PR 🇧🇷 <!-- TODO: jQuery switch language -->
-      </p>
-      <p class="smaller-font text-white">
-        ♦️ Ruby 🎢 Rails<br>
-        ☕️ JavaScript&nbsp; 🧩 Node
-      </p>
+  <div class="d-flex justify-content-center p-0 m-0">
+    <img src="images/leo-sq.jpg" class="img-round profile-pic shadow" alt="leohque user photo">
+  </div>
+  <div class="header d-flex flex-wrap">
+    <div class="descr p-3 text-right d-flex flex-column">
+      <div>
+        <h1 class="text-white">
+          Hello,<br>I'm Leo 🧑‍🌾
+        </h1>
+          <p class="smaller-font text-white">
+            🌎📍<em>Boston, MA</em>
+          </p>
+          <p class="smaller-font text-white">
+            EN 🇺🇸 / ES 🇻🇪 / PR 🇧🇷 <!-- TODO: jQuery switch language -->
+          </p>
+      </div>
+      <div class="skills d-flex flex-wrap smaller-font text-white">
+        <span class="skill shadow">Ruby</span>
+        <span class="skill shadow">Rails</span>
+        <span class="skill shadow">React</span>
+        <span class="skill shadow">Redux</span>
+        <span class="skill shadow">Vue</span>
+        <span class="skill shadow">JavaScript</span>
+        <span class="skill shadow">Node</span>
+        <span class="skill shadow">jQuery</span>
+        <span class="skill shadow">SASS</span>
+        <span class="skill shadow">CSS</span>
+        <span class="skill shadow">Bootstrap</span>
+        <span class="skill shadow">WordPress</span>
+        <span class="skill shadow">PHP</span>
+        <span class="skill shadow">PostgreSQL</span>
+        <span class="skill shadow">MySQL</span>
+        <span class="skill shadow">Heroku</span>
+        <span class="skill shadow">Active Record</span>
+        <span class="skill shadow">MVC</span>
+      </div>
     </div>
+
     <div class="side-info w-25 p-3 text-white">
       <ul id="social-links">
         <li><a href="https://github.com/leohque" target="_blank"><i class="fab fa-github-square"></i></a></li>
-        <li><a href="https://instagram.com/leohque" target="_blank"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://twitter.com/leohque" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-        <li><a href="https://regenerativethinking.tumblr.com/" target="_blank"><i class="fab fa-tumblr-square"></i></a></li>
         <li><a href="https://www.linkedin.com/in/leopoldoh/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
         <li><a href="mailto:leopoldohmr@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
       </ul>
 
       <ul class="attrs list-inline">
         <li>🌎 Venezuelan-American</li>
-        <li>🔆 Dynamic Dreamer</li>
+        <li>Dynamic Dreamer 🔆</li>
         <li>⚡️ Full-Stack Developer</li>
-        <li>🌶 Regenerative Grower</li>
+        <li>Regenerative Grower 🌶</li>
         <li>👨‍🎓 Bachelor of Science<br>
-          <strong>💻 CIS</strong>, <strong>📝 Communications</strong><br>
-          <strong>📊 & Information Design</strong>
+          <strong>Computer Information Systems&nbsp;💻</strong><br>
+          <strong>📊 Information Design</strong><br>
+          <strong>Communications 📝</strong>
         </li>
       </ul>
-        <button type="button" class="btn btn-success shadow" data-toggle="modal" data-target="#resumeModal">
-          View Resumé
-        </button>
-      </div>
+
+      <button type="button" class="btn btn-success shadow" data-toggle="modal" data-target="#resumeModal">
+        View Resumé
+      </button>
     </div>
+  </div>
 
     <div class="container">
       <h3 class="text-white m-3 text-center">Recent Web Projects</h3>
       <div class="d-flex justify-content-center flex-wrap">
         <div class="card shadow p-3 m-2">
           <h4>Freshco</h4>
-          <a href="https://github.com/leohque/freshx" target="_blank">
-            <img src="images/freshco.gif" height="150px" alt="Freshco" class="m-1 shadow"></a>
-          <p><small>[ ruby on rails ]</small></p>
           <p>Web application to connect with growers in your community</p>
+          <a href="https://freshco.life" target="_blank">
+            <img src="images/freshco.gif" height="150px" alt="Freshco" class="m-1 shadow">
+          </a>
+          <div class="pt-3">
+            <span class="skill">Ruby</span>
+            <span class="skill">Rails</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">Heroku</span>
+          </div>
         </div>
         <div class="card shadow p-3 m-2">
           <h4>Catapult Art</h4>
-          <a href="https://github.com/leohque/catapult" target="_blank">
-            <img src="images/catapult.gif" height="150px" alt="Catapult" class="m-1 shadow"></a>
-          <p><small>[ ruby on rails ] </small></p>
           <p>Web application that locates & displays art shared locally.</p>
+          <a href="https://catapult-art.herokuapp.com" target="_blank">
+            <img src="images/catapult.gif" height="150px" alt="Catapult" class="m-1 shadow">
+          </a>
+          <div class="pt-3">
+            <span class="skill">Ruby</span>
+            <span class="skill">Rails</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">Heroku</span>
+          </div>
         </div>
         <div class="card shadow p-3 m-2">
           <h4>Cooking With Yao</h4>
-          <a href="https://cookingwithyao.com" target="_blank">
-            <img src="images/cookingwithyao.gif" height="150px" alt="Cooking With Yao" class="m-1 shadow"></a>
-          <p><small>[ squarespace ]</small></p>
           <p>Portfolio for a freelance Chef and Cooking Instructor.</p>
+          <a href="https://cookingwithyao.com" target="_blank">
+            <img src="images/cookingwithyao.gif" height="150px" alt="Cooking With Yao" class="m-1 shadow">
+          </a>
+          <div class="pt-3">
+            <span class="skill">Squarespace</span>
+          </div>
         </div>
         <div class="card shadow p-3 m-2">
           <h4>The Shape of Care</h4>
-          <a href="https://theshapeofcare.org" target="_blank">
-            <img src="images/shapeofcare.gif" height="150px" alt="The Shape of Care" class="m-1 shadow"></a>
-          <p><small>[ wordpress + simplecast ]</small></p>
           <p>A podcast about caregiving.</p>
+          <a href="https://theshapeofcare.org" target="_blank">
+            <img src="images/shapeofcare.gif" height="150px" alt="The Shape of Care" class="m-1 shadow">
+          </a>
+          <div class="pt-3">
+            <span class="skill">Wordpress</span>
+            <span class="skill">Simplecast</span>
+          </div>
         </div>
         <div class="card shadow p-3 m-2">
           <h4>IQ Latino</h4>
-          <a href="https://iqlatino.org" target="_blank">
-            <img src="images/iqlatino.gif" height="150px" alt="IQ Latino" class="m-1 shadow"></a>
-          <p><small>[ wordpress ]</small></p>
           <p>News platform that promotes Latino empowerment.</p>
+          <a href="https://iqlatino.org" target="_blank">
+            <img src="images/iqlatino.gif" height="150px" alt="IQ Latino" class="m-1 shadow">
+          </a>
+          <div class="pt-3">
+            <span class="skill">Wordpress</span>
+          </div>
         </div>
       </div>
     </div>
@@ -113,10 +155,17 @@
       </div>
     </div>
 
+    <div class="text-center">
+      <ul id="social-links">
+        <li><a href="https://github.com/leohque" target="_blank"><i class="fab fa-github-square"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/leopoldoh/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="mailto:leopoldohmr@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+      </ul>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="/application.js"></script>
   </body>
-  </html>
+</html>
