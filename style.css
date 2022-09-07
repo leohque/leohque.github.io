@@ -46,7 +46,7 @@ a {
 }
 
 .skills {
-  width:300px;
+  width:200px;
   justify-content:flex-end;
 }
 
@@ -142,7 +142,7 @@ a {
   }
 
   .skills {
-    width:400px;
+    width:250px;
   }
 
   .side-info {
