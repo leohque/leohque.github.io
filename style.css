@@ -93,6 +93,10 @@ button:hover {
   font-size:18px;
 }
 
+.card .skill {
+  font-size:12px;
+}
+
 /* Utilities */
 
 .smaller-font {
