@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SJ44236PHZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SJ44236PHZ');
+</script>
+
+
   <title>@leohque</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,106 +23,166 @@
 </head>
 
 <body>
-  <div class="d-flex justify-content-center p-0 m-0">
-    <img src="images/leo-sq.jpg" class="img-round profile-pic shadow" alt="leohque user photo">
-  </div>
-  <div class="header d-flex flex-wrap">
-    <div class="descr p-3 text-right d-flex flex-column">
-      <div>
-        <h1 class="text-white">
-          Hello,<br>I'm Leo 🧑‍🌾
-        </h1>
-          <p class="smaller-font text-white">
-            🌎📍<em>Los Angeles, CA</em>
-          </p>
-          <p class="smaller-font text-white">
-            🗣 EN 🇺🇸 / ES 🇻🇪 / PR 🇧🇷 <!-- TODO: jQuery switch language -->
-          </p>
+
+<!--
+  <nav class="navbar bg-light sticky-top d-flex justify-content-end">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#resumeModal">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:leopoldohmr@gmail.com">Contact</a>
+      </li>
+    </ul>
+  </nav>
+-->
+
+
+  <header class="masthead text-white pt-5">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-5 text-right">
+          <img src="images/leo-sq.jpg" class="img-round profile-pic shadow" alt="leohque user photo">
+          <div class="skills m-3 d-flex flex-wrap text-white justify-content-end">
+            <span class="skill shadow">Ruby on Rails</span>
+            <span class="skill shadow">React</span>
+            <span class="skill shadow">JavaScript</span>
+            <span class="skill shadow">Wordpress</span>
+            <span class="skill shadow">HTML5</span>
+            <span class="skill shadow">CSS3</span>
+            <p class="pt-3 font-large">🗣 EN 🇺🇸 / ES 🇻🇪 / PR 🇧🇷 <!-- TODO: jQuery switch language --></p>
+          </div>
+          <div class="d-flex justify-content-end pr-2">
+            <ul id="social-links">
+              <li><a href="https://github.com/leohque" target="_blank"><i class="fab fa-github-square"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/leopoldoh/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="mailto:leopoldohmr@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-7 text-white">
+          <h1 class="text-white">Hi, I'm Leo~</h1>
+          <h2 class="text-white">A dynamic dreamer from Venezuela<br>
+          living in Los Angeles, California.</h2>
+
+          <div class="d-flex justify-content-between flex-column">
+            <h5>🎨 UX & Web Designer</h5>
+            <h5>⚡️ Full-Stack Developer</h5>
+            <h5>🌶 Regenerative Grower</h5>
+            <h5 class="pt-3"><strong>👨‍🎓 Bachelor of Science</strong> & Student of Life<br>
+              <small><span>💻 Computer Information Systems</span><br>
+              <span>📊 Information Design</span><br>
+              <span>📝 Communications</span></small>
+            </h5>
+          </div>
+          <button type="button" class="mt-3 btn button-green shadow w-50" data-toggle="modal" data-target="#resumeModal">
+            View Resumé
+          </button>
+        </div>
       </div>
-      <div class="skills d-flex flex-wrap smaller-font text-white">
-        <span class="skill shadow">Ruby on Rails</span>
-        <span class="skill shadow">React</span>
-        <span class="skill shadow">JavaScript</span>
-        <span class="skill shadow">Wordpress</span>
-        <span class="skill shadow">HTML5</span>
-        <span class="skill shadow">CSS3</span>
+    </div>
+  </header>
+
+
+<a name="portfolio"></a>
+
+<section class="title">
+  <h2 class="container text-white mt-5 pl-4 pt-3">Some Things I've Coded</h2>
+</section>
+<section class="portfolio">
+<div class="container pt-2 d-flex justify-content-center flex-wrap">
+    <div class="card shadow p-3 m-2">
+      <h4>Wheel of Life</h4>
+      <p>A tool to explore where you are using your<br>time, money, and emotional resources.</p>
+      <a href="https://infinitegrowth.rocks/wol" target="_blank">
+        <img src="images/wol.gif" height="150px" alt="Freshco" class="m-1">
+      </a>
+      <div class="pt-3">
+        <span class="skill">JavaScript</span>
+        <span class="skill">Chart.js</span>
+        <span class="skill">Wordpress</span>
       </div>
     </div>
 
-    <div class="side-info w-25 p-3 text-white">
-      <ul id="social-links">
-        <li><a href="https://github.com/leohque" target="_blank"><i class="fab fa-github-square"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/leopoldoh/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="mailto:leopoldohmr@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
-      </ul>
+    <div class="card shadow p-3 m-2">
+      <h4>Freshco</h4>
+      <p>Web application to connect with<br>growers in your community.</p>
+      <a href="https://freshx.herokuapp.com" target="_blank">
+        <img src="images/freshco.gif" height="150px" alt="Freshco" class="m-1 shadow">
+      </a>
+      <div class="pt-3">
+        <span class="skill">Ruby on Rails</span>
+        <span class="skill">Node.js</span>
+        <span class="skill">Heroku</span>
+      </div>
+    </div>
 
-      <ul class="attrs list-inline">
-        <li>🌎 Venezuelan-American</li>
-        <li>Dynamic Dreamer 🔆</li>
-        <li>⚡️ Full-Stack Developer</li>
-        <li>& Regenerative Grower 🌶</li>
-        <li>👨‍🎓 Bachelor of Science<br>
-          <strong>Computer Information Systems&nbsp;💻</strong><br>
-          <strong>📊 Information Design</strong><br>
-          <strong>Communications 📝</strong>
-        </li>
-      </ul>
+    <div class="card shadow p-3 m-2">
+      <h4>Catapult Art</h4>
+      <p>Web application that locates &<br>displays art shared locally.</p>
+      <a href="https://github.com/leohque/catapult" target="_blank">
+        <img src="images/catapult.gif" height="150px" alt="Catapult" class="m-1 shadow">
+      </a>
+      <div class="pt-3">
+        <span class="skill">Ruby on Rails</span>
+        <span class="skill">Node.js</span>
+        <span class="skill">Heroku</span>
+      </div>
+    </div>
 
-      <button type="button" class="btn btn-success shadow" data-toggle="modal" data-target="#resumeModal">
-        View Resumé
-      </button>
+    <div class="card shadow p-3 m-2">
+      <h4>Longest Word Game</h4>
+      <p>What is the longest word<br>you can find?</p>
+      <a href="https://simple-longest-word.herokuapp.com/" target="_blank">
+        <img src="images/wonder.gif" height="150px" alt="Longest Word Game" class="m-1">
+      </a>
+      <div class="pt-3">
+        <span class="skill">Ruby on Rails</span>
+        <span class="skill">Sortable.js</span>
+        <span class="skill">Webpack</span>
+      </div>
+    </div>
+
+    <div class="card shadow p-3 m-2">
+      <h4>Giphy Search</h4>
+      <p>Search for a GIF<br>using the Giphy API.</p>
+      <a href="https://leohque.github.io/react-gifs/" target="_blank">
+        <img src="images/heythere.gif" height="150px" alt="Giphy Search" class="m-1">
+      </a>
+      <div class="pt-3">
+        <span class="skill">React</span>
+        <span class="skill">Giphy API</span>
+        <span class="skill">Yarn</span>
+      </div>
+    </div>
+
+    <div class="card shadow p-3 m-2">
+      <h4>Live Chat Interface</h4>
+      <p>Working live chatroom<br>using wagon-chat API.</p>
+      <a href="https://leohque.github.io/chat-redux/" target="_blank">
+        <img src="images/texting.gif" height="150px" alt="Live Chat Interface" class="m-1">
+      </a>
+      <div class="pt-3">
+        <span class="skill">React</span>
+        <span class="skill">Redux</span>
+        <span class="skill">Bootstrap</span>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <a class="btn btn-success m-2" href="https://github.com/leohque" target="_blank" role="button">See More on Github</a>
     </div>
   </div>
+</section>
 
-    <div class="container">
-      <h3 class="text-white m-3 text-center">Some Things I've Coded</h3>
-      <div class="d-flex justify-content-center flex-wrap">
-        <div class="card shadow p-3 m-2">
-          <h4>Wheel of Life</h4>
-          <p>A tool to explore where you are using your<br>time, money, and emotional resources</p>
-          <a href="https://infinitegrowth.rocks/wol" target="_blank">
-            <img src="images/wol.gif" height="150px" alt="Freshco" class="m-1">
-          </a>
-          <div class="pt-3">
-            <span class="skill">JavaScript</span>
-            <span class="skill">Chart.js</span>
-            <span class="skill">Wordpress</span>
-          </div>
-        </div>
+<section class="title">
+  <h2 class="container text-white mt-5 pl-4 pt-3">Some Websites I've Created</h2>
+</section>
 
-        <div class="card shadow p-3 m-2">
-          <h4>Freshco</h4>
-          <p>Web application to connect with<br>growers in your community.</p>
-          <a href="https://freshx.herokuapp.com" target="_blank">
-            <img src="images/freshco.gif" height="150px" alt="Freshco" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Ruby on Rails</span>
-            <span class="skill">Node.js</span>
-            <span class="skill">Heroku</span>
-          </div>
-        </div>
-
-
-        <div class="card shadow p-3 m-2">
-          <h4>Catapult Art</h4>
-          <p>Web application that locates &<br>displays art shared locally</p>
-          <a href="https://github.com/leohque/catapult" target="_blank">
-            <img src="images/catapult.gif" height="150px" alt="Catapult" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Ruby on Rails</span>
-            <span class="skill">Node.js</span>
-            <span class="skill">Heroku</span>
-          </div>
-        </div>
-
-
-      </div> <!-- end things I've coded -->
-
-      <h3 class="text-white m-3 text-center">Some Websites I've Created</h3>
-      <div class="d-flex justify-content-center flex-wrap">
-
+<section class="container d-flex justify-content-center flex-wrap">
         <div class="card shadow p-3 m-2">
           <h4>NJEJA</h4>
           <p>A website for a community organization<br>supporting environmental justice in NJ.</p>
@@ -127,7 +200,7 @@
           <h4>DBE Campaign</h4>
           <p>A website for a collaborative campaign<br>dedicated to transformative democracy.</p>
           <a href="https://democracybeyondelections.org" target="_blank">
-            <img src="images/dbe.png" height="150px" alt="Freshco" class="m-1 shadow">
+            <img src="images/dbe.png" height="150px" alt="DBE" class="m-1 shadow">
           </a>
           <div class="pt-3">
             <span class="skill">Wordpress</span>
@@ -136,12 +209,11 @@
           </div>
         </div>
 
-
         <div class="card shadow p-3 m-2">
           <h4>BCCO.coop</h4>
           <p>A website for Boston's<br>center for community ownership.</p>
           <a href="https://bcco.coop" target="_blank">
-            <img src="images/bcco.png" height="150px" alt="Freshco" class="m-1 shadow">
+            <img src="images/bcco.png" height="150px" alt="BCCO" class="m-1 shadow">
           </a>
           <div class="pt-3">
             <span class="skill">Wordpress</span>
@@ -153,7 +225,7 @@
           <h4>Infinite Growth</h4>
           <p>A website for a design firm<br>for creative change-makers.</p>
           <a href="https://infinitegrowth.rocks" target="_blank">
-            <img src="images/infinitegrowth.png" height="150px" alt="Freshco" class="m-1 shadow">
+            <img src="images/infinitegrowth.png" height="150px" alt="Infinite Growth" class="m-1 shadow">
           </a>
           <div class="pt-3">
             <span class="skill">Wordpress</span>
@@ -161,21 +233,17 @@
           </div>
         </div>
 
-
-
         <div class="card shadow p-3 m-2">
           <h4>Revolutionary Love Project</h4>
           <p>Managing & designing multiple pages for<br>Valarie Kaur's initatives & projects.</p>
           <a href="https://valariekaur.com" target="_blank">
-            <img src="images/valarie.png" height="150px" alt="Freshco" class="m-1 shadow">
+            <img src="images/valarie.png" height="150px" alt="Rev Love" class="m-1 shadow">
           </a>
           <div class="pt-3">
             <span class="skill">Wordpress</span>
             <span class="skill">WPBakery</span>
           </div>
         </div>
-
-
 
         <div class="card shadow p-3 m-2">
           <h4>The Shape of Care</h4>
@@ -210,10 +278,62 @@
             <span class="skill">Wordpress</span>
           </div>
         </div>
+      </div> <!-- end websites -->
+    </section>
 
+    <section class="title">
+      <h2 class="container text-white mt-5 pl-4 pt-3">Some Other Things I've Done</h2>
+    </section>
 
+    <section class="container d-flex justify-content-center flex-wrap">
+
+      <div class="card-large p-3 m-2 shadow">
+        <h4>Coding With Kids</h4>
+        <p>Taught 1st and 2nd graders how to code using <a href="https://scratch.mit.edu/" target="_blank">Scratch</a> in after-school programming.</p>
+        <div class="d-flex justify-content-center flex-wrap">
+          <figure class="figure">
+            <img src="images/scratch1st.gif" width="350px" alt="GIF showcasing something coded by a 1st grader" class="m-2 shadow" />
+            <figcaption class="figure-caption"><em>Created by a 1st grader</em></figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="images/scratch2nd.gif" width="350px" alt="GIF showcasing something coded by a 2nd grader" class="m-2 shadow" />
+            <figcaption class="figure-caption"><em>Created by a 2nd grader</em></figcaption>
+          </figure>
+        </div>
       </div>
-    </div>
+
+      <div class="card-large p-3 m-2 shadow">
+        <h4>The Food Project</h4>
+        <p>Co-managed a 32-acre organic vegetable farm<br>that provided fresh produce to food desert communities in Massachusetts.</p>
+        <div class="d-flex justify-content-center flex-wrap">
+          <a href="https://thefoodproject.org/" target="_blank"><img src="images/veggies.png" width="700px" alt="Veggies by The Food Project" class="m-2 shadow" /></a>
+        </div>
+      </div>
+
+      <!--
+
+      <div class="card-large p-3 m-2 shadow">
+        <h4>Healthy Chelsea</h4>
+        <p>Co-Managed two youth employment programs focused on improving the school food,<br>gardening & composting efforts in the school district of Chelsea, MA.</p>
+        <div class="d-flex justify-content-center flex-wrap">
+          <img src="images/scratch1st.gif" width="350px" alt="GIF showcasing something coded by a 1st grader" class="m-2 shadow" />
+          <img src="images/scratch2nd.gif" width="350px" alt="GIF showcasing something coded by a 2nd grader" class="m-2 shadow" />
+        </div>
+      </div>
+
+      <div class="card-large p-3 m-2 shadow">
+        <h4>Green City Growers</h4>
+        <p>Helped set up the Fenway Park’s rooftop farm in Boston & grow vegetables throughout the season.</p>
+        <div class="d-flex justify-content-center flex-wrap">
+          <img src="images/scratch1st.gif" width="350px" alt="GIF showcasing something coded by a 1st grader" class="m-2 shadow" />
+          <img src="images/scratch2nd.gif" width="350px" alt="GIF showcasing something coded by a 2nd grader" class="m-2 shadow" />
+        </div>
+      </div>
+    -->
+
+      </section>
+
+
 
     <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeModalTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -232,7 +352,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> <!-- end resume popup -->
 
     <div class="text-center">
       <ul id="social-links">
@@ -243,8 +363,6 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="/application.js"></script>
   </body>
 </html>

@@ -2,9 +2,9 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color:#261831;
-  background-image:linear-gradient(#442a68,#261831);
+  background-image:linear-gradient(#000, #2A1B39);
   background-repeat:no-repeat;
+  background-attachment:fixed;
   color:rgb(10,10,10);
   font-size:14px;
   height:100vh;
@@ -23,11 +23,41 @@ ul {
 a {
   text-decoration:none;
   font-weight:600;
+  color:purple;
 }
 
-.header {
+a:hover {
+  color:black;
+}
+
+button:hover {
+  background-color:#218838;
+}
+
+.font-large {
+  font-size:24px;
+}
+
+.masthead {
+  min-height: 400px;
+  position:relative;
+}
+
+.title {
   justify-content:center;
   align-items:flex-start;
+}
+
+
+.banner {
+  border:groove;
+  position:relative;
+  vertical-align:bottom;
+}
+
+
+.button-green {
+  background-color:#5D9A5D;
 }
 
 .descr {
@@ -45,19 +75,22 @@ a {
   text-align:center;
 }
 
-.skills {
-  width:200px;
-  justify-content:flex-end;
+.card-large {
+  width:100%;
+  text-align:center;
+  background-color:white;
+  border-radius:0.25rem;
 }
 
+
 .skill {
-  margin:1px 1px;
-  background-color:rgba(0,0,0,0.1);
+  margin:3px 3px;
+  background-color:rgba(255,255,255,0.1);
   box-shadow:0px 0px 17px rgba(0,0,0,0.1);
-  padding:5px 8px;
+  padding:5px 10px;
   border: dashed 1px rgba(255,255,255,0.1);
   border-radius:3px;
-  vertical-align:middle;
+  font-size:18px;
 }
 
 /* Utilities */
@@ -90,7 +123,7 @@ a {
 }
 
 #social-links li a {
-  color: #28a745;
+  color: #5D9A5D;
   transition: color 0.2s;
 }
 
