@@ -42,9 +42,8 @@
 
 
   <header class="masthead text-white pt-5">
-    <div class="container">
-      <div class="d-flex">
-        <div class="w-50 text-right mr-2">
+      <section class="d-flex">
+        <div class="col-left text-right mr-2">
           <img src="images/leo-sq.jpg" class="img-round profile-pic shadow pr-3" alt="leohque user photo">
           <div class="skills-main d-flex flex-wrap justify-content-end">
             <span class="skill shadow">React</span>
@@ -56,7 +55,6 @@
             <span class="skill shadow">HTML5</span>
             <span class="skill shadow">CSS3</span>
           </div>
-          <p class="pt-3 font-large text-right pr-3">🗣 EN 🇺🇸 / ES 🇻🇪 / PR 🇧🇷 <!-- TODO: jQuery switch language --></p>
 
           <div class="d-flex justify-content-end pr-2">
             <ul id="social-links">
@@ -65,12 +63,16 @@
               <li><a href="mailto:leopoldohmr@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
             </ul>
           </div>
+
+          <button type="button" class="mr-2 btn button-green shadow font-weight-bold" width="200px" data-toggle="modal" data-target="#resumeModal">
+            View Resumé
+          </button>
         </div>
-        <div class="w-50 ml-2">
+        <div class="col-right ml-2">
           <h1 class="text-white">Hi, I'm Leo~</h1>
           <h2 class="text-white">A dynamic dreamer from Venezuela<br>
           living in Los Angeles, California.</h2>
-
+          <p class="font-large pr-3">🗣 EN 🇺🇸 / ES 🇻🇪 / PR 🇧🇷 <!-- TODO: jQuery switch language --></p>
           <div class="d-flex justify-content-between flex-column">
             <h5>🎨 UX & Web Designer</h5>
             <h5>⚡️ Full-Stack Developer</h5>
@@ -81,12 +83,8 @@
               <span>📝 Communications</span></small>
             </h5>
           </div>
-          <button type="button" class="mt-3 btn button-green shadow font-weight-bold" width="200px" data-toggle="modal" data-target="#resumeModal">
-            View Resumé
-          </button>
         </div>
-      </div>
-    </div>
+      </section>
   </header>
 
 
@@ -333,7 +331,7 @@
         <div class="card">
           <div class="row-top" style="background-image:url('images/ccwu.png');background-size:cover;background-position:top;"  onclick="window.open('https://coloradocareworkersunite.org', '_blank');">
             <span>
-              <h4><a href="https://houseus.org" target="_blank">CCWU</a></h4>
+              <h4><a href="https://coloradocareworkersunite.org" target="_blank">CCWU</a></h4>
             </span>
           </div>
           <div class="row-bottom">
@@ -482,6 +480,7 @@
     </div> <!-- end resume popup -->
 
     <div class="text-center">
+      <h3 class="text-white">Let's work together! 🤗<br>Feel free to reach out~</h5>
       <ul id="social-links">
         <li><a href="https://github.com/leohque" target="_blank"><i class="fab fa-github-square"></i></a></li>
         <li><a href="https://www.linkedin.com/in/leopoldoh/" target="_blank"><i class="fab fa-linkedin"></i></a></li>

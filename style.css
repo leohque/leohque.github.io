@@ -52,6 +52,15 @@ button:hover {
   position:relative;
 }
 
+.col-left {
+  padding-left:150px;
+  width:45%;
+}
+
+.col-right {
+  width:55%;
+}
+
 .portfolio {
   padding:30px 50px
 }
@@ -153,7 +162,6 @@ button:hover {
 
 .skills-main {
   margin:5px;
-  padding-left:150px;
 }
 
 
@@ -246,6 +254,10 @@ button:hover {
   .card {
     width:300px;
   }
+
+  .skills-main .skill {
+    font-size:14px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -281,6 +293,10 @@ button:hover {
     padding:20px 0 10px 15px;
   }
 
+  .col-left {
+    padding:0;
+  }
+
   .portfolio {
     padding:0;
   }
@@ -299,5 +315,9 @@ button:hover {
 
   .skills-main {
     padding-left:10px;
+}
+
+.skills-main .skill {
+  font-size:12px;
 }
 }
