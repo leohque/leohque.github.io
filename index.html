@@ -46,11 +46,13 @@
       <div class="d-flex">
         <div class="w-50 text-right mr-2">
           <img src="images/leo-sq.jpg" class="img-round profile-pic shadow pr-3" alt="leohque user photo">
-          <div class="skills m-3 d-flex flex-wrap text-white justify-content-end">
-            <span class="skill shadow">Ruby on Rails</span>
+          <div class="skills-main d-flex flex-wrap justify-content-end">
             <span class="skill shadow">React</span>
+            <span class="skill shadow">Ruby on Rails</span>
             <span class="skill shadow">JavaScript</span>
             <span class="skill shadow">Wordpress</span>
+            <span class="skill shadow">Squarespace</span>
+            <span class="skill shadow">Wix</span>
             <span class="skill shadow">HTML5</span>
             <span class="skill shadow">CSS3</span>
           </div>
@@ -79,7 +81,7 @@
               <span>📝 Communications</span></small>
             </h5>
           </div>
-          <button type="button" class="mt-3 btn button-green shadow" width="200px" data-toggle="modal" data-target="#resumeModal">
+          <button type="button" class="mt-3 btn button-green shadow font-weight-bold" width="200px" data-toggle="modal" data-target="#resumeModal">
             View Resumé
           </button>
         </div>
@@ -90,206 +92,334 @@
 
 <a name="portfolio"></a>
 
-<section class="title">
-  <h2 class="container text-white mt-5 pl-4 pt-3">Some Things I've Coded</h2>
+<section class="banner">
+  <h2>Some Things I've Coded</h2>
 </section>
-<section class="portfolio">
-<div class="container pt-2 d-flex justify-content-center flex-wrap">
-    <div class="card shadow p-3 m-2">
-      <h4>Wheel of Life</h4>
-      <p>A tool to explore where you are using your<br>time, money, and emotional resources.</p>
-      <a href="https://infinitegrowth.rocks/wol" target="_blank">
-        <img src="images/wol.gif" height="150px" alt="Freshco" class="m-1">
-      </a>
-      <div class="pt-3">
-        <span class="skill">JavaScript</span>
-        <span class="skill">Chart.js</span>
-        <span class="skill">Wordpress</span>
+<section class="portfolio portfolio-code">
+<div class="d-flex justify-content-center flex-wrap">
+    <div class="card d-flex flex-row">
+      <div class="card-left" style="background-image:url('images/flows.png');background-size:cover;background-position:top;"  onclick="window.open('http://cibic-viz.sudo.codes/', '_blank');">
+      </div>
+      <div class="card-right">
+        <h4><a href="http://cibic-viz.sudo.codes/" target="_blank">CiBiC FLOWS</a></h4>
+        <p>A tool to visualize biking patterns in cities.</p>
+          <div class="skill-list">
+            <span class="skill">React</span>
+            <span class="skill">Mapbox</span>
+            <span class="skill">CiBiC API</span>
+          </div>
       </div>
     </div>
 
-    <div class="card shadow p-3 m-2">
-      <h4>Freshco</h4>
-      <p>Web application to connect with<br>growers in your community.</p>
-      <a href="https://freshx.herokuapp.com" target="_blank">
-        <img src="images/freshco.gif" height="150px" alt="Freshco" class="m-1 shadow">
-      </a>
-      <div class="pt-3">
+    <div class="card d-flex flex-row">
+
+
+        <div class="card-left" style="background-image:url('images/wol.gif');background-size:cover;background-position:center;"  onclick="window.open('https://infinitegrowth.rocks/wol', '_blank');">
+      </div>
+      <div class="card-right">
+        <h4><a href="https://infinitegrowth.rocks/wol" target="_blank">Wheel of Life</a></h4>
+        <p>A tool to explore where you are using your time, money, and emotional resources.</p>
+        <div class="skill-list">
+          <span class="skill">JavaScript</span>
+          <span class="skill">Chart.js</span>
+          <span class="skill">Wordpress</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card d-flex flex-row">
+      <div class="card-left" style="background-image:url('images/freshco.gif');background-size:cover;background-position:center;"  onclick="window.open('https://freshx.herokuapp.com', '_blank');">
+      </div>
+      <div class="card-right">
+        <h4><a href="https://freshx.herokuapp.com" target="_blank">Freshco</a></h4>
+        <p>Web application to connect with growers in your community.</p>
+        <div class="skill-list">
         <span class="skill">Ruby on Rails</span>
         <span class="skill">Node.js</span>
         <span class="skill">Heroku</span>
+        </div>
       </div>
     </div>
 
-    <div class="card shadow p-3 m-2">
-      <h4>Catapult Art</h4>
-      <p>Web application that locates &<br>displays art shared locally.</p>
-      <a href="https://github.com/leohque/catapult" target="_blank">
-        <img src="images/catapult.gif" height="150px" alt="Catapult" class="m-1 shadow">
-      </a>
-      <div class="pt-3">
-        <span class="skill">Ruby on Rails</span>
-        <span class="skill">Node.js</span>
-        <span class="skill">Heroku</span>
+    <div class="card d-flex flex-row">
+      <div class="card-left" style="background-image:url('images/catapult.gif');background-size:cover;background-position:center;"  onclick="window.open('https://github.com/leohque/catapult', '_blank');">
+      </div>
+      <div class="card-right">
+        <h4><a href="https://github.com/leohque/catapult" target="_blank">Catapult Art</a></h4>
+        <p>Web application that locates & displays art shared locally.</p>
+        <div class="skill-list">
+          <span class="skill">Ruby on Rails</span>
+          <span class="skill">Node.js</span>
+          <span class="skill">Heroku</span>
+        </div>
       </div>
     </div>
 
-    <div class="card shadow p-3 m-2">
-      <h4>Longest Word Game</h4>
-      <p>What is the longest word<br>you can find?</p>
-      <a href="https://simple-longest-word.herokuapp.com/" target="_blank">
-        <img src="images/wonder.gif" height="150px" alt="Longest Word Game" class="m-1">
-      </a>
-      <div class="pt-3">
-        <span class="skill">Ruby on Rails</span>
-        <span class="skill">Sortable.js</span>
-        <span class="skill">Webpack</span>
+    <div class="card d-flex flex-row">
+      <div class="card-left" style="background-image:url('images/wonder.gif');background-size:cover;background-position:center;"  onclick="window.open('https://simple-longest-word.herokuapp.com/', '_blank');">
+      </div>
+      <div class="card-right">
+        <h4><a href="https://simple-longest-word.herokuapp.com/" target="_blank">Longest Word Game</a></h4>
+        <p>What is the longest word you can find?</p>
+        <div class="skill-list">
+          <span class="skill">Ruby on Rails</span>
+          <span class="skill">Sortable.js</span>
+        </div>
       </div>
     </div>
 
-    <div class="card shadow p-3 m-2">
-      <h4>Giphy Search</h4>
-      <p>Search for a GIF<br>using the Giphy API.</p>
-      <a href="https://leohque.github.io/react-gifs/" target="_blank">
-        <img src="images/heythere.gif" height="150px" alt="Giphy Search" class="m-1">
-      </a>
-      <div class="pt-3">
-        <span class="skill">React</span>
-        <span class="skill">Giphy API</span>
-        <span class="skill">Yarn</span>
+    <div class="card d-flex flex-row">
+      <div class="card-left" style="background-image:url('images/heythere.gif');background-size:cover;background-position:center;"  onclick="window.open('https://leohque.github.io/react-gifs/', '_blank');">
+      </div>
+      <div class="card-right">
+        <h4><a href="https://leohque.github.io/react-gifs/" target="_blank">Giphy Search</a></h4>
+        <p>Search for a GIF<br>using the Giphy API.</p>
+        <div class="skill-list">
+          <span class="skill">React</span>
+          <span class="skill">Giphy API</span>
+          <span class="skill">Yarn</span>
+        </div>
       </div>
     </div>
 
-    <div class="card shadow p-3 m-2">
-      <h4>Live Chat Interface</h4>
-      <p>Working live chatroom<br>using wagon-chat API.</p>
-      <a href="https://leohque.github.io/chat-redux/" target="_blank">
-        <img src="images/texting.gif" height="150px" alt="Live Chat Interface" class="m-1">
-      </a>
-      <div class="pt-3">
-        <span class="skill">React</span>
-        <span class="skill">Redux</span>
-        <span class="skill">Bootstrap</span>
+    <div class="card d-flex flex-row">
+      <div class="card-left" style="background-image:url('images/texting.gif');background-size:cover;background-position:center;"  onclick="window.open('https://leohque.github.io/chat-redux/', '_blank');">
+      </div>
+      <div class="card-right">
+
+        <h4><a href="https://leohque.github.io/chat-redux/" target="_blank">Live Chat Interface</a></h4>
+        <p>Working live chatroom using wagon-chat API.</p>
+        <div class="skill-list">
+          <span class="skill">React</span>
+          <span class="skill">Redux</span>
+          <span class="skill">Bootstrap</span>
+        </div>
       </div>
     </div>
 
-    <div class="text-center">
-      <a class="btn btn-success m-2" href="https://github.com/leohque" target="_blank" role="button">See More on Github</a>
+    <div class="text-center card card-wildcard">
+      <ul class="list-more">
+        <li><a href="https://leohque.github.io/react-flats/" target="_blank">React Flats Display</a></li>
+        <li><a href="https://github.com/leohque/rails-task-manager" target="_blank">Rails Task Manager</a></li>
+        <li><a href="https://github.com/leohque/rails-mister-cocktail" target="_blank">Rails Recipe Book</a></li>
+        <li><a href="https://github.com/leohque/fullstack-challenges" target="_blank">Full Stack Challenges</a></li>
+      </ul>
+      <a class="btn btn-success ml-3 mr-3" href="https://github.com/leohque" target="_blank" role="button">See More on Github</a>
     </div>
   </div>
 </section>
 
-<section class="title">
-  <h2 class="container text-white mt-5 pl-4 pt-3">Some Websites I've Created</h2>
+<section class="banner">
+  <h2>Some Websites I've Created</h2>
 </section>
 
-<section class="container d-flex justify-content-center flex-wrap">
-        <div class="card shadow p-3 m-2">
-          <h4>NJEJA</h4>
-          <p>A website for a community organization<br>supporting environmental justice in NJ.</p>
-          <a href="https://njeja.org" target="_blank">
-            <img src="images/njeja.png" height="150px" alt="Freshco" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Wordpress</span>
-            <span class="skill">Elementor</span>
-            <span class="skill">Multi-Language</span>
+<section class="portfolio portfolio-websites d-flex justify-content-center flex-wrap">
+        <div class="card">
+          <div class="row-top" style="background-image:url('images/khmer.png');background-size:cover;background-position:top;"  onclick="window.open('https://khmeridentity.com', '_blank');">
+            <span>
+              <h4><a href="https://khmeridentity.com" target="_blank">Khmer Identity</a></h4>
+            </span>
+          </div>
+          <div class="row-bottom">
+            <span>
+              <p>A website that lists online Khmer languages classes for adults.</p>
+              <div class="skill-list">
+                <span class="skill">Wordpress</span>
+              </div>
+            </span>
           </div>
         </div>
+        <div class="card">
+          <div class="row-top" style="background-image:url('images/njeja.png');background-size:cover;background-position:top;"  onclick="window.open('https://njeja.org', '_blank');">
+            <span>
+              <h4><a href="https://njeja.org" target="_blank">NJEJA</a></h4>
+            </span>
+          </div>
+          <div class="row-bottom">
+            <span>
+              <p>A website for a community org focused on environmental justice in NJ.</p>
+              <div class="skill-list">
+                <span class="skill">Wordpress</span>
+                <span class="skill">Elementor</span>
+                <span class="skill">Multi-Language</span>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row-top" style="background-image:url('images/valarie.png');background-size:cover;background-position:top;"  onclick="window.open('https://valariekaur.com', '_blank');">
+            <span>
+              <h4><a href="https://valariekaur.com" target="_blank">Revolutionary Love Project</a></h4>
+            </span>
+          </div>
+          <div class="row-bottom">
+            <span>
+              <p>Managing & designing multiple pages for Valarie Kaur's initatives & projects.</p>
+              <div class="skill-list">
+                <span class="skill">Wordpress</span>
+                <span class="skill">WPBakery</span>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row-top" style="background-image:url('images/bristol.png');background-size:cover;background-position:top;"  onclick="window.open('https://bristolyogastudio.com', '_blank');">
+            <span>
+              <h4><a href="https://bristolyogastudio.com" target="_blank">Bristol Yoga Studio</a></h4>
+            </span>
+          </div>
+          <div class="row-bottom">
+            <span>
+              <p>A website for a yoga studio to facilitate appointments & scheduling.</p>
+              <div class="skill-list">
+                <span class="skill">Wordpress</span>
+                <span class="skill">Elementor</span>
+                <span class="skill">Multi-Language</span>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row-top" style="background-image:url('images/progressive.png');background-size:cover;background-position:top;"  onclick="window.open('https://progressivemass.com', '_blank');">
+            <span>
+              <h4><a href="https://progressivemass.com" target="_blank">Progressive Mass</a></h4>
+            </span>
+          </div>
+          <div class="row-bottom">
+            <span>
+              <p>A website for a community org supporting progressive politics in MA.</p>
+              <div class="skill-list">
+                <span class="skill">Wordpress</span>
+                <span class="skill">Elementor</span>
+                <span class="skill">Multi-Language</span>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row-top" style="background-image:url('images/dbe.png');background-size:cover;background-position:top;"  onclick="window.open('https://democracybeyondelections.org', '_blank');">
+            <span>
+              <h4><a href="https://democracybeyondelections.org" target="_blank">DBE Campaign</a></h4>
+            </span>
+          </div>
+          <div class="row-bottom">
+            <span>
+              <p>A website for a collaborative campaign for transformative democracy.</p>
+              <div class="skill-list">
+                <span class="skill">Wordpress</span>
+                <span class="skill">Elementor</span>
+                <span class="skill">Multi-Language</span>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row-top" style="background-image:url('images/houseus.png');background-size:cover;background-position:top;"  onclick="window.open('https://houseus.org', '_blank');">
+            <span>
+              <h4><a href="https://houseus.org" target="_blank">HouseUS</a></h4>
+            </span>
+          </div>
+          <div class="row-bottom">
+            <span>
+              <p>A website for a fund working towards housing justice.</p>
+              <div class="skill-list">
+                <span class="skill">Wordpress</span>
+                <span class="skill">Elementor</span>
+                <span class="skill">Multi-Language</span>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row-top" style="background-image:url('images/ccwu.png');background-size:cover;background-position:top;"  onclick="window.open('https://coloradocareworkersunite.org', '_blank');">
+            <span>
+              <h4><a href="https://houseus.org" target="_blank">CCWU</a></h4>
+            </span>
+          </div>
+          <div class="row-bottom">
+            <span>
+              <p>A website for an organization of careworkers working for better wages.</p>
+              <div class="skill-list">
+                <span class="skill">Wordpress</span>
+                <span class="skill">Elementor</span>
+                <span class="skill">Multi-Language</span>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row-top" style="background-image:url('images/bcco.png');background-size:cover;background-position:top;"  onclick="window.open('https://bcco.coop', '_blank');">
+            <span>
+              <h4><a href="https://bcco.coop" target="_blank">BCCO.coop</a></h4>
+            </span>
+          </div>
+          <div class="row-bottom">
+            <span>
+              <p>A website for Boston's center for community ownership.</p>
+              <div class="skill-list">
+                <span class="skill">Wordpress</span>
+                <span class="skill">Elementor</span>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row-top" style="background-image:url('images/infinitegrowth.png');background-size:cover;background-position:top;"  onclick="window.open('https://infinitegrowth.rocks', '_blank');">
+            <span>
+              <h4><a href="https://infinitegrowth.rocks" target="_blank">Infinite Growth</a></h4>
+            </span>
+          </div>
+          <div class="row-bottom">
+            <span>
+              <p>A website for a design firm for creative change-makers.</p>
+              <div class="skill-list">
+                <span class="skill">Wordpress</span>
+                <span class="skill">Teachable</span>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row-top" style="background-image:url('images/shapeofcare.png');background-size:cover;background-position:top;"  onclick="window.open('https://theshapeofcare.org', '_blank');">
+            <span>
+              <h4><a href="https://theshapeofcare.org" target="_blank">The Shape of Care</a></h4>
+            </span>
+          </div>
+          <div class="row-bottom">
+            <span>
+              <p>Website & editing for a podcast about care workers and the people they care for.</p>
+              <div class="skill-list">
+                <span class="skill">Wordpress</span>
+                <span class="skill">Simplecast</span>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row-top" style="background-image:url('images/yao.png');background-size:cover;background-position:top;"  onclick="window.open('https://cookingwithyao.com', '_blank');">
+            <span>
+              <h4><a href="https://cookingwithyao.com" target="_blank">Cooking With Yao</a></h4>
+            </span>
+          </div>
+          <div class="row-bottom">
+            <span>
+              <p>Portfolio for a freelance Chef and Cooking Instructor</p>
+              <div class="skill-list">
+                <span class="skill">Squarespace</span>
+              </div>
+            </span>
+          </div>
+        </div>
+</section>
 
-        <div class="card shadow p-3 m-2">
-          <h4>DBE Campaign</h4>
-          <p>A website for a collaborative campaign<br>dedicated to transformative democracy.</p>
-          <a href="https://democracybeyondelections.org" target="_blank">
-            <img src="images/dbe.png" height="150px" alt="DBE" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Wordpress</span>
-            <span class="skill">Elementor</span>
-            <span class="skill">Multi-Language</span>
-          </div>
-        </div>
-
-        <div class="card shadow p-3 m-2">
-          <h4>BCCO.coop</h4>
-          <p>A website for Boston's<br>center for community ownership.</p>
-          <a href="https://bcco.coop" target="_blank">
-            <img src="images/bcco.png" height="150px" alt="BCCO" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Wordpress</span>
-            <span class="skill">Elementor</span>
-          </div>
-        </div>
-
-        <div class="card shadow p-3 m-2">
-          <h4>Infinite Growth</h4>
-          <p>A website for a design firm<br>for creative change-makers.</p>
-          <a href="https://infinitegrowth.rocks" target="_blank">
-            <img src="images/infinitegrowth.png" height="150px" alt="Infinite Growth" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Wordpress</span>
-            <span class="skill">Teachable</span>
-          </div>
-        </div>
-
-        <div class="card shadow p-3 m-2">
-          <h4>Revolutionary Love Project</h4>
-          <p>Managing & designing multiple pages for<br>Valarie Kaur's initatives & projects.</p>
-          <a href="https://valariekaur.com" target="_blank">
-            <img src="images/valarie.png" height="150px" alt="Rev Love" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Wordpress</span>
-            <span class="skill">WPBakery</span>
-          </div>
-        </div>
-
-        <div class="card shadow p-3 m-2">
-          <h4>The Shape of Care</h4>
-          <p>Website & editing for<br>a podcast about caregiving</p>
-          <a href="http://theshapeofcare.org" target="_blank">
-            <img src="images/shapeofcare.png" height="150px" alt="The Shape of Care" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Wordpress</span>
-            <span class="skill">Simplecast</span>
-          </div>
-        </div>
-
-        <div class="card shadow p-3 m-2">
-          <h4>Cooking With Yao</h4>
-          <p>Portfolio for a freelance Chef and Cooking Instructor</p>
-          <a href="https://cookingwithyao.com" target="_blank">
-            <img src="images/yao.png" height="150px" alt="Cooking With Yao" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Squarespace</span>
-          </div>
-        </div>
-
-        <div class="card shadow p-3 m-2">
-          <h4>IQ Latino</h4>
-          <p>News platform that promotes Latin empowerment</p>
-          <a href="https://iqlatino.org" target="_blank">
-            <img src="images/iqlatino.png" height="150px" alt="IQ Latino" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Wordpress</span>
-          </div>
-        </div>
-      </div> <!-- end websites -->
+    <section class="banner">
+      <h2>Some Other Things I've Done</h2>
     </section>
 
-    <section class="title">
-      <h2 class="container text-white mt-5 pl-4 pt-3">Some Other Things I've Done</h2>
-    </section>
+    <section class="portfolio portfolio-other d-flex flex-wrap justify-content-center">
 
-    <section class="container d-flex justify-content-center flex-wrap">
-
-      <div class="card-large p-3 m-2 shadow">
-        <h4>Coding With Kids</h4>
+      <div class="card-large">
+        <h4><a href="https://www.codingwithkids.com/" target="_blank">Coding With Kids</a></h4>
         <p>Taught 1st and 2nd graders how to code using <a href="https://scratch.mit.edu/" target="_blank">Scratch</a> in after-school programming.</p>
         <div class="d-flex justify-content-center flex-wrap">
           <figure class="figure">
@@ -303,36 +433,32 @@
         </div>
       </div>
 
-      <div class="card-large p-3 m-2 shadow">
-        <h4>The Food Project</h4>
+      <div class="card-large">
+        <h4><a href="https://thefoodproject.org">The Food Project</a></h4>
         <p>Co-managed a 32-acre organic vegetable farm<br>that provided fresh produce to food desert communities in Massachusetts.</p>
         <div class="d-flex justify-content-center flex-wrap">
           <a href="https://thefoodproject.org/" target="_blank"><img src="images/veggies.png" width="350px" alt="Veggies by The Food Project" class="m-2 shadow" /></a>
         </div>
       </div>
 
-      <!--
 
-      <div class="card-large p-3 m-2 shadow">
-        <h4>Healthy Chelsea</h4>
-        <p>Co-Managed two youth employment programs focused on improving the school food,<br>gardening & composting efforts in the school district of Chelsea, MA.</p>
+      <div class="card-large">
+        <h4><a href="https://www.instagram.com/eco4youth/" target="_blank">GreenRoots / ECO</a></h4>
+        <p>Co-Managed youth employment programs focused on civic engagement,<br>community empowerment & environmental justice in Chelsea, Mass.</p>
         <div class="d-flex justify-content-center flex-wrap">
-          <img src="images/scratch1st.gif" width="350px" alt="GIF showcasing something coded by a 1st grader" class="m-2 shadow" />
-          <img src="images/scratch2nd.gif" width="350px" alt="GIF showcasing something coded by a 2nd grader" class="m-2 shadow" />
+          <a href="https://www.instagram.com/eco4youth/" target="_blank"><img src="images/eco.png" width="350px" alt="Posters created by ECO" class="m-2 shadow" /></a>
         </div>
       </div>
 
-      <div class="card-large p-3 m-2 shadow">
-        <h4>Green City Growers</h4>
-        <p>Helped set up the Fenway Park’s rooftop farm in Boston & grow vegetables throughout the season.</p>
+      <div class="card-large">
+        <h4><a href="https://www.instagram.com/healthychelseama/" target="_blank">Healthy Chelsea / Youth Food Movement</a></h4>
+        <p>Co-Managed youth employment programs focused on improving the<br>school food, gardens & composting efforts in Chelsea, Mass.</p>
         <div class="d-flex justify-content-center flex-wrap">
-          <img src="images/scratch1st.gif" width="350px" alt="GIF showcasing something coded by a 1st grader" class="m-2 shadow" />
-          <img src="images/scratch2nd.gif" width="350px" alt="GIF showcasing something coded by a 2nd grader" class="m-2 shadow" />
+          <a href="https://www.instagram.com/healthychelseama/" target="_blank"><img src="images/anitas02.jpg" width="250px" alt="Kids gardening at Anita's garden" class="m-2 shadow" />
         </div>
       </div>
-    -->
 
-      </section>
+    </section>
 
 
 
