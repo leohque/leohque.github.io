@@ -158,6 +158,15 @@ button:hover {
   padding:15px;
   margin:5px;
   border:1px solid rgba(0,0,0,0.1);
+  width:91%;
+}
+
+.card-large.xs {
+  width:30%;
+}
+
+.card-large.xs img {
+  width:100%;
 }
 
 .skills-main {
@@ -258,6 +267,10 @@ button:hover {
   .skills-main .skill {
     font-size:14px;
   }
+
+  .card-large.xs img {
+    width:95%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -270,9 +283,10 @@ button:hover {
     padding-bottom:20px;
   }
 
-  .card-large {
+  .card-large, .card-large.xs {
     width:95%;
   }
+
 
   .descr {
     width:100% !important;
