@@ -124,7 +124,7 @@ button:hover {
 }
 
 .row-top {
-  height:200px;
+  height:170px;
   cursor:pointer;
   display:flex;
   align-items:flex-end;
@@ -135,7 +135,6 @@ button:hover {
 }
 
 .row-top span {
-  background-color:rgba(240,240,240,0.9);
   padding:5px 15px;
   width:100%;
 }
@@ -153,7 +152,7 @@ button:hover {
 .row-bottom span {
   width:100%;
   display:inline-block;
-  padding:7px;
+  padding:1px;
 }
 
 .row-bottom p, .row-top h4 {
