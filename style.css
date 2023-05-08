@@ -178,7 +178,7 @@ button:hover {
 }
 
 .skills-main {
-  margin:5px;
+  margin:5px 0 0 150px;
 }
 
 
@@ -198,16 +198,22 @@ button:hover {
   padding:3px;
   border: dashed 1px rgba(255,255,255,0.1);
   border-radius:3px;
-  font-size:10px;
+  font-size:14px;
 }
 
 .skill-list {
   display:flex;
+  flex-wrap:wrap;
+}
+
+.row-bottom .skill-list {
+  justify-content:flex-end;
 }
 
 .skill-list .skill {
   text-align:center;
-  margin:0 5px 0 0;
+  margin:5px 5px 0 0;
+  width:auto;
 }
 
 .list-more {
@@ -270,6 +276,10 @@ button:hover {
 @media only screen and (max-width: 1200px) {
   .card {
     width:300px;
+  }
+
+  .skills-main {
+    margin:0 auto;
   }
 
   .skills-main .skill {
