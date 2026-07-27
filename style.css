@@ -2,9 +2,9 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color:#261831;
-  background-image:linear-gradient(#442a68,#261831);
+  background-image:linear-gradient(#000, #2A1B39);
   background-repeat:no-repeat;
+  background-attachment:fixed;
   color:rgb(10,10,10);
   font-size:14px;
   height:100vh;
@@ -15,19 +15,68 @@ h1, h2 {
   color:#19213D;
 }
 
-
-ul {
-  list-style:none;
+h4 a {
+  font-weight:200;
+  color:#1b1c1e;
+  font-size:18px;
+  border-bottom:1px solid rgba(0,0,0,0.1);
 }
+
+h4 a:hover {
+  border-bottom:1px solid rgba(0,0,0,1);
+  text-decoration:none;
+}
+
+
 
 a {
   text-decoration:none;
   font-weight:600;
+  color:purple;
 }
 
-.header {
-  justify-content:center;
-  align-items:flex-start;
+a:hover {
+  color:black;
+}
+
+button:hover {
+  background-color:#218838;
+}
+
+.bio {
+  padding:30px 0;
+}
+
+.font-large {
+  font-size:24px;
+}
+
+.masthead {
+  min-height: 400px;
+  position:relative;
+}
+
+.col-left {
+  padding-left:150px;
+  width:45%;
+}
+
+.col-right {
+  width:55%;
+}
+
+.portfolio {
+  padding:30px 50px
+}
+
+.banner h2 {
+  color:white;
+  padding:50px 50px 10px 77px;
+}
+
+
+.button-green {
+  background-color:#5D9A5D;
 }
 
 .descr {
@@ -41,22 +90,142 @@ a {
 }
 
 .card {
-  width:30%;
-  text-align:center;
+  width:22%;
+  border:none;
+  background-color:#f0f0f0;
+  box-shadow:1px 1px 17px rgba(0,0,0,0.1);
+  margin:0 17px 17px;
+  border-radius:1px;
 }
 
-.skills {
-  width:300px;
+.portfolio-code .card {
+  border-left:7px dashed rgba(42,27,57,0.9);
+}
+
+.portfolio-websites .card {
+  border-top:7px dashed rgba(42,27,57,0.9);
+  width:30%;
+}
+
+.portfolio-other .card {
+  border-left:7px dashed rgba(42,27,57,0.9);
+}
+
+.card-left {
+  width:35%;
+  cursor:pointer;
+}
+.card-left:hover {
+  opacity:0.9;
+}
+.card-right {
+  width:65%;
+  padding:20px 10px;
+}
+
+.row-top {
+  height:170px;
+  cursor:pointer;
+  display:flex;
+  align-items:flex-end;
+}
+
+.row-top:hover {
+  opacity:0.9;
+}
+
+.row-top span {
+  padding:5px 15px;
+  width:100%;
+}
+
+.row-top span h4 {
+  font-weight:500;
+  text-shadow:1px 1px 17px rgba(0,0,0,0.3);
+  font-size:20px;
+}
+
+.row-bottom {
+  padding:7px;
+}
+
+.row-bottom span {
+  width:100%;
+  display:inline-block;
+  padding:1px;
+}
+
+.row-bottom p, .row-top h4 {
+  display:none;
+}
+
+
+.card-large {
+  background-color:white;
+  border-radius:1px;
+  padding:15px;
+  margin:5px;
+  border:1px solid rgba(0,0,0,0.1);
+  width:91%;
+}
+
+.card-large.xs {
+  width:30%;
+}
+
+.card-large.xs img {
+  width:100%;
+}
+
+.skills-main {
+  margin:5px 0 0 150px;
+}
+
+
+.skills-main .skill {
+  margin:3px 3px;
+  background-color:rgba(255,255,255,0.1);
+  box-shadow:0px 0px 17px rgba(0,0,0,0.1);
+  padding:5px 10px;
+  border: dashed 1px rgba(255,255,255,0.1);
+  border-radius:3px;
+  font-size:18px;
+}
+
+.card .skill {
+  background-color:rgba(255,255,255,0.1);
+  box-shadow:0px 0px 17px rgba(0,0,0,0.1);
+  padding:3px;
+  border: dashed 1px rgba(255,255,255,0.1);
+  border-radius:3px;
+  font-size:14px;
+}
+
+.skill-list {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.row-bottom .skill-list {
   justify-content:flex-end;
 }
 
-.skill {
-  margin:1px 1px;
-  background-color:rgba(0,0,0,0.3);
-  padding:5px 8px;
-  border: dashed 1px rgba(255,255,255,0.1);
-  border-radius:3px;
-  vertical-align:middle;
+.skill-list .skill {
+  text-align:center;
+  margin:5px 5px 0 0;
+  width:auto;
+}
+
+.list-more {
+  padding-top:10px;
+  text-align:left;
+  list-style-type:circle;
+  font-size:12px;
+}
+
+.list-more a {
+  font-weight:500;
+  font-size:1.2em;
 }
 
 /* Utilities */
@@ -89,7 +258,7 @@ a {
 }
 
 #social-links li a {
-  color: #28a745;
+  color: #5D9A5D;
   transition: color 0.2s;
 }
 
@@ -106,25 +275,40 @@ a {
 
 @media only screen and (max-width: 1200px) {
   .card {
-    width:80%;
+    width:300px;
+  }
+
+  .skills-main {
+    margin:0 auto;
+  }
+
+  .skills-main .skill {
+    font-size:14px;
+  }
+
+  .card-large.xs img {
+    width:95%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-
-  .skills {
-    padding-top:14px;
-    justify-content:center;
-  }
-
   .card {
     width:100%;
+    margin-bottom:20px;
   }
 
-  .header {
-    align-items:center !important;
-    flex-direction:column;
+  .card-wildcard {
+    padding-bottom:20px;
   }
+
+  .card-large, .card-large.xs {
+    width:95%;
+  }
+
+  .portfolio-websites .card {
+    width:95%;
+  }
+
 
   .descr {
     width:100% !important;
@@ -133,26 +317,56 @@ a {
     margin:0 !important;
   }
 
-  .descr p {
-    margin:0;
-  }
-
-  .descr img {
-    align-self:center;
-  }
-
-  .skills {
-    width:400px;
-  }
-
-  .side-info {
-    width:100% !important;
-    text-align: center !important;
-    padding:0 !important;
+  .font-large {
+    font-size:18px;
   }
 
   h1 {
     font-size:42px;
+  }
+
+  h2 {
+    font-size:22px;
+  }
+
+  .banner h2 {
+    padding:20px 0 10px 15px;
+  }
+
+  .bio {
+    width:95%;
+  }
+
+  .col-left {
+    padding:0;
+  }
+
+  .col-right {
+    padding:0;
+  }
+
+  .hello {
+    font-size:32px;
+  }
+
+  .col-right h2 {
+    font-size:18px;
+  }
+
+  .col-right p {
+    font-size:16px;
+  }
+
+  .col-right small {
+    font-size:12px;
+  }
+
+  .portfolio {
+    padding:0;
+  }
+
+  h5 {
+    font-size:16px;
   }
 
   .attrs {
@@ -162,4 +376,13 @@ a {
   .side-info {
     flex-grow:1;
   }
+
+  .skills-main {
+    padding-left:10px;
+}
+
+.skills-main .skill {
+  font-size:12px;
+  padding:3px 3px;
+}
 }

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+
+    body {
+      background-color:#000;
+    }
+
+.card {
+  width: 250px;
+  height: 350px;
+  background: #1c1c1c;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  margin:10px 5px;
+}
+
+.card h2 {
+  z-index: 1;
+  color: white;
+  font-size: 2em;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 183, 255)), to(rgb(255, 48, 255)));
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 130%;
+  -webkit-animation: rotBGimg 3s linear infinite;
+          animation: rotBGimg 3s linear infinite;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+@-webkit-keyframes rotBGimg {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotBGimg {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #1c1c1c;
+  ;
+  inset: 5px;
+  border-radius: 15px;
+}
+/* .card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} */
+
+#wrapper {
+  width:1000px;
+  margin:50px auto;
+  display:flex;
+  justify-content:space-around;flex-wrap:wrap;
+}
+
+
+#examples .example {
+  width:600px;
+  margin:0 auto;
+}
+
+#examples {
+  display:flex;justify-content:center;
+}
+
+h2 {
+  color:white;
+  font-family:monospace;
+}
+
+  </style>
+  <title>Cards</title>
+</head>
+<body>
+
+  <div id="examples">
+
+
+      <div class="example">
+        <h2>Version 1</h2>
+          <div class="card">
+            <h2>
+              <img src="cowabunga.png" width="100%" alt=""></h2>
+          </div>
+  </div>
+  <div class="example">
+        <h2>Version 2</h2>
+    <div class="card">
+        <h2 style="text-align:center">
+        <img src="cowabunga.png" width="90%" alt=""></h2>
+    </div>
+</div>
+  </div>
+
+<div id="wrapper">
+    <div class="card">
+        <h2>
+        <img src="cowabunga.png" width="100%" alt=""></h2>
+    </div>
+    <div class="card">
+        <h2>
+        <img src="cowabunga.png" width="100%" alt=""></h2>
+    </div>
+    <div class="card">
+        <h2>
+        <img src="cowabunga.png" width="100%" alt=""></h2>
+    </div>
+    <div class="card">
+        <h2>
+        <img src="cowabunga.png" width="100%" alt=""></h2>
+    </div>
+    <div class="card">
+        <h2>
+        <img src="cowabunga.png" width="100%" alt=""></h2>
+    </div>
+    <div class="card">
+        <h2>
+        <img src="cowabunga.png" width="100%" alt=""></h2>
+    </div>
+    <div class="card">
+        <h2>
+        <img src="cowabunga.png" width="100%" alt=""></h2>
+    </div>
+    <div class="card">
+        <h2>
+        <img src="cowabunga.png" width="100%" alt=""></h2>
+    </div>
+    <div class="card">
+        <h2>
+        <img src="cowabunga.png" width="100%" alt=""></h2>
+    </div>
+    <div class="card">
+        <h2>
+        <img src="cowabunga.png" width="100%" alt=""></h2>
+    </div>
+    <div class="card">
+        <h2>
+        <img src="cowabunga.png" width="100%" alt=""></h2>
+    </div>
+    <div class="card">
+        <h2>
+        <img src="cowabunga.png" width="100%" alt=""></h2>
+    </div>
+  <div class="example">
+    <div class="card">
+        <h2 style="text-align:center">
+        <img src="cowabunga.png" width="90%" alt=""></h2>
+    </div>
+</div>
+  <div class="example">
+    <div class="card">
+        <h2 style="text-align:center">
+        <img src="cowabunga.png" width="90%" alt=""></h2>
+    </div>
+</div>
+  <div class="example">
+    <div class="card">
+        <h2 style="text-align:center">
+        <img src="cowabunga.png" width="90%" alt=""></h2>
+    </div>
+</div>
+  <div class="example">
+    <div class="card">
+        <h2 style="text-align:center">
+        <img src="cowabunga.png" width="90%" alt=""></h2>
+    </div>
+</div>
+  <div class="example">
+    <div class="card">
+        <h2 style="text-align:center">
+        <img src="cowabunga.png" width="90%" alt=""></h2>
+    </div>
+</div>
+  <div class="example">
+    <div class="card">
+        <h2 style="text-align:center">
+        <img src="cowabunga.png" width="90%" alt=""></h2>
+    </div>
+</div>
+  <div class="example">
+    <div class="card">
+        <h2 style="text-align:center">
+        <img src="cowabunga.png" width="90%" alt=""></h2>
+    </div>
+</div>
+  <div class="example">
+    <div class="card">
+        <h2 style="text-align:center">
+        <img src="cowabunga.png" width="90%" alt=""></h2>
+    </div>
+</div>
+  <div class="example">
+    <div class="card">
+        <h2 style="text-align:center">
+        <img src="cowabunga.png" width="90%" alt=""></h2>
+    </div>
+</div>
+  <div class="example">
+    <div class="card">
+        <h2 style="text-align:center">
+        <img src="cowabunga.png" width="90%" alt=""></h2>
+    </div>
+</div>
+</div>
+</body>
+</html>

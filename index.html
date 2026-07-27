@@ -1,168 +1,528 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>@leohque</title>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SJ44236PHZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SJ44236PHZ');
+</script>
+
+
+  <title>Leo Martinez - UX & Web Front-end Developer</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="React | Rails | JavaScript | Wordpress | Shopify | Squarespace">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <div class="d-flex justify-content-center p-0 m-0">
-    <img src="images/leo-sq.jpg" class="img-round profile-pic shadow" alt="leohque user photo">
-  </div>
-  <div class="header d-flex flex-wrap">
-    <div class="descr p-3 text-right d-flex flex-column">
-      <div>
-        <h1 class="text-white">
-          Hello,<br>I'm Leo 🧑‍🌾
-        </h1>
-          <p class="smaller-font text-white">
-            🌎📍<em>Los Angeles, CA</em>
-          </p>
-          <p class="smaller-font text-white">
-            🗣 EN 🇺🇸 / ES 🇻🇪 / PR 🇧🇷 <!-- TODO: jQuery switch language -->
-          </p>
+
+<!--
+  <nav class="navbar bg-light sticky-top d-flex justify-content-end">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#resumeModal">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:leopoldohmr@gmail.com">Contact</a>
+      </li>
+    </ul>
+  </nav>
+-->
+
+
+  <header class="masthead text-white">
+      <section class="bio d-flex">
+        <div class="col-left text-right mr-2">
+          <img src="images/leo-sq.jpg" class="img-round profile-pic shadow pr-3" alt="leohque user photo">
+          <div class="skills-main d-flex flex-wrap justify-content-end">
+            <span class="skill shadow">React</span>
+            <span class="skill shadow">Ruby on Rails</span>
+            <span class="skill shadow">JavaScript</span>
+            <span class="skill shadow">Wordpress</span>
+            <span class="skill shadow">Squarespace</span>
+            <span class="skill shadow">Shopify</span>
+            <span class="skill shadow">Webflow</span>
+            <span class="skill shadow">Wix</span>
+            <span class="skill shadow">HTML</span>
+            <span class="skill shadow">CSS</span>
+            <span class="skill shadow">UX</span>
+          </div>
+
+          <div class="d-flex justify-content-end pr-2 pt-3">
+            <ul id="social-links">
+              <li><a href="https://github.com/leohque" target="_blank"><i class="fab fa-github-square"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/leopoldoh/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="mailto:leopoldohmr@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+          </div>
+
+          <button type="button" class="mr-2 btn button-green shadow font-weight-bold" width="200px" data-toggle="modal" data-target="#resumeModal">
+            View Resumé
+          </button>
+        </div>
+        <div class="col-right ml-2">
+          <h1 class="text-white hello">Hi, I'm Leo~</h1>
+          <h2 class="text-white">A dynamic dreamer from Venezuela<br>
+          currently in Los Angeles.</h2>
+          <p class="pr-3">💬 English / Español / Português</p>
+          <div class="d-flex justify-content-between flex-column">
+            <h5>🎨 UX/UI & Web Designer ⚡️ Front-End Developer</h5>
+            <h5>💡 Digital Communications & Marketing Strategist</h5>
+            <h5 class="pt-3"><strong>👨‍🎓 Bachelor of Science</strong><br>
+              <small><span>💻 &nbsp;  Computer Info Systems</span><br>
+              <span>📊 &nbsp; Information Design</span><br>
+              <span>📝 &nbsp;  Communications</span></small>
+            </h5>
+          </div>
+          <h5 class="pt-3">⚡️ Full-Stack Development<br>@ Le Wagon Bootcamp</h5>
+        </div>
+      </section>
+  </header>
+
+
+<a name="portfolio"></a>
+
+<section class="banner">
+  <h2>Recent Coding Projects</h2>
+</section>
+<section class="portfolio portfolio-code">
+<div class="d-flex justify-content-center flex-wrap">
+    <div class="card d-flex flex-row">
+      <div class="card-left" style="background-image:url('images/flows.png');background-size:cover;background-position:top;"  onclick="window.open('http://cibic-viz.sudo.codes/', '_blank');">
       </div>
-      <div class="skills d-flex flex-wrap smaller-font text-white">
-        <span class="skill shadow">Rails</span>
-        <span class="skill shadow">React</span>
-        <span class="skill shadow">Wordpress</span>
-        <span class="skill shadow">Vue</span>
-        <span class="skill shadow">JavaScript</span>
-        <span class="skill shadow">Node</span>
-        <span class="skill shadow">Ruby</span>
-        <span class="skill shadow">PHP</span>
-        <span class="skill shadow">Bootstrap</span>
-        <span class="skill shadow">SCSS</span>
-        <span class="skill shadow">PostgreSQL</span>
-        <span class="skill shadow">MongoDB</span>
+      <div class="card-right">
+        <h4><a href="http://cibic-viz.sudo.codes/" target="_blank">CiBiC FLOWS</a></h4>
+        <p>A tool to visualize biking patterns in cities.</p>
+          <div class="skill-list">
+            <span class="skill">React</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Mapbox</span>
+            <span class="skill">CiBiC API</span>
+            <span class="skill">CSS</span>
+            <span class="skill">HTML</span>
+            <span class="skill">Figma</span>
+          </div>
       </div>
     </div>
 
-    <div class="side-info w-25 p-3 text-white">
-      <ul id="social-links">
-        <li><a href="https://github.com/leohque" target="_blank"><i class="fab fa-github-square"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/leopoldoh/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="mailto:leopoldohmr@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+    <div class="card d-flex flex-row">
+        <div class="card-left" style="background-image:url('images/wol.gif');background-size:cover;background-position:center;"  onclick="window.open('https://infinitegrowth.rocks/wol', '_blank');">
+      </div>
+      <div class="card-right">
+        <h4><a href="https://infinitegrowth.rocks/wol" target="_blank">Wheel of Life</a></h4>
+        <p>A tool to explore where you are using your time, money, and emotional resources.</p>
+        <div class="skill-list">
+          <span class="skill">JavaScript</span>
+          <span class="skill">Chart.js</span>
+          <span class="skill">Wordpress</span>
+          <span class="skill">CSS</span>
+          <span class="skill">HTML</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card d-flex flex-row">
+      <div class="card-left" style="background-image:url('images/freshco.gif');background-size:cover;background-position:center;"  onclick="window.open('https://github.com/leohque/freshx', '_blank');">
+      </div>
+      <div class="card-right">
+        <h4><a href="https://github.com/leohque/freshx" target="_blank">Freshco</a></h4>
+        <p>Web application to connect with growers in your community.</p>
+        <div class="skill-list">
+        <span class="skill">Ruby on Rails</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">CSS</span>
+        <span class="skill">HTML</span>
+        <span class="skill">Figma</span>
+        <span class="skill">Node.js</span>
+        <span class="skill">Mapbox</span>
+        <span class="skill">UX</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card d-flex flex-row">
+      <div class="card-left" style="background-image:url('images/catapult.gif');background-size:cover;background-position:center;"  onclick="window.open('https://github.com/leohque/catapult', '_blank');">
+      </div>
+      <div class="card-right">
+        <h4><a href="https://github.com/leohque/catapult" target="_blank">Catapult Art</a></h4>
+        <p>Web application that locates & displays art shared locally.</p>
+        <div class="skill-list">
+          <span class="skill">Ruby on Rails</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">CSS</span>
+          <span class="skill">HTML</span>
+          <span class="skill">Figma</span>
+          <span class="skill">Node.js</span>
+          <span class="skill">Mapbox</span>
+          <span class="skill">UX</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card d-flex flex-row">
+      <div class="card-left" style="background-image:url('images/wonder.gif');background-size:cover;background-position:center;"  onclick="window.open('https://github.com/leohque/rails-longest-word-game', '_blank');">
+      </div>
+      <div class="card-right">
+        <h4><a href="https://github.com/leohque/rails-longest-word-game" target="_blank">Longest Word Game</a></h4>
+        <p>What is the longest word you can find?</p>
+        <div class="skill-list">
+          <span class="skill">Ruby on Rails</span>
+          <span class="skill">Sortable.js</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">CSS</span>
+          <span class="skill">HTML</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card d-flex flex-row">
+      <div class="card-left" style="background-image:url('images/heythere.gif');background-size:cover;background-position:center;"  onclick="window.open('https://leohque.github.io/react-gifs/', '_blank');">
+      </div>
+      <div class="card-right">
+        <h4><a href="https://leohque.github.io/react-gifs/" target="_blank">Giphy Search</a></h4>
+        <p>Search for a GIF<br>using the Giphy API.</p>
+        <div class="skill-list">
+          <span class="skill">React</span>
+          <span class="skill">Giphy API</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">CSS</span>
+          <span class="skill">HTML</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card d-flex flex-row">
+      <div class="card-left" style="background-image:url('images/texting.gif');background-size:cover;background-position:center;"  onclick="window.open('https://leohque.github.io/chat-redux/', '_blank');">
+      </div>
+      <div class="card-right">
+
+        <h4><a href="https://leohque.github.io/chat-redux/" target="_blank">Live Chat Interface</a></h4>
+        <p>Working live chatroom using wagon-chat API.</p>
+        <div class="skill-list">
+          <span class="skill">React</span>
+          <span class="skill">Redux</span>
+          <span class="skill">Bootstrap</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">CSS</span>
+          <span class="skill">HTML</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center card card-wildcard">
+      <ul class="list-more">
+        <li><a href="https://leohque.github.io/react-flats/" target="_blank">React Flats Display</a></li>
+        <li><a href="https://github.com/leohque/rails-task-manager" target="_blank">Rails Task Manager</a></li>
+        <li><a href="https://github.com/leohque/rails-mister-cocktail" target="_blank">Rails Recipe Book</a></li>
+        <li><a href="https://github.com/leohque/fullstack-challenges" target="_blank">Full Stack Challenges</a></li>
       </ul>
+      <a class="btn btn-success ml-3 mr-3" href="https://github.com/leohque" target="_blank" role="button">See More on Github</a>
+    </div>
+  </div>
+</section>
 
-      <ul class="attrs list-inline">
-        <li>🌎 Venezuelan-American</li>
-        <li>Dynamic Dreamer 🔆</li>
-        <li>⚡️ Full-Stack Developer</li>
-        <li>& Regenerative Grower 🌶</li>
-        <li>👨‍🎓 Bachelor of Science<br>
-          <strong>Computer Information Systems&nbsp;💻</strong><br>
-          <strong>📊 Information Design</strong><br>
-          <strong>Communications 📝</strong>
-        </li>
-      </ul>
+<section class="banner">
+  <h2>Recent Websites Created</h2>
+</section>
 
-      <button type="button" class="btn btn-success shadow" data-toggle="modal" data-target="#resumeModal">
-        View Resumé
-      </button>
+<section class="portfolio portfolio-websites d-flex justify-content-center flex-wrap">
+
+
+  <div class="card">
+    <div class="row-top" style="background-image:url('images/revolutionarylove.png');background-size:cover;background-position:top;"  onclick="window.open('https://revolutionarylove.org', '_blank');">
+    </div>
+    <div class="row-bottom">
+      <span>
+        <h4><a href="https://revolutionarylove.org" target="_blank">Revolutionary Love Project</a></h4>
+        <div class="skill-list">
+          <span class="skill">WordPress</span>
+          <span class="skill">Elementor</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">CSS</span>
+          <span class="skill">HTML</span>
+        </div>
+      </span>
     </div>
   </div>
 
-    <div class="container">
-      <h3 class="text-white m-3 text-center">Recent Web Projects</h3>
-      <div class="d-flex justify-content-center flex-wrap">
-        <!--
-        <div class="card shadow p-3 m-2">
-          <h4>Infinite Growth</h4>
-          <p>[]</p>
-          <a href="https://infinitegrowth.rocks" target="_blank">
-            <img src="images/freshco.gif" height="150px" alt="Freshco" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Wordpress</span>
-            <span class="skill">Chart.js</span>
-            <span class="skill">Teachable</span>
-          </div>
+  <div class="card">
+    <div class="row-top" style="background-image:url('images/kvl.png');background-size:cover;background-position:top;"  onclick="window.open('https://karolinvanloon.com', '_blank');">
+    </div>
+    <div class="row-bottom">
+      <span>
+        <h4><a href="https://karolinvanloon.com" target="_blank">Karolin Van Loon</a></h4>
+        <div class="skill-list">
+          <span class="skill">Shopify</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Liquid</span>
+          <span class="skill">CSS</span>
+          <span class="skill">HTML</span>
         </div>
-        <div class="card shadow p-3 m-2">
-          <h4>Revolutionary Love Project</h4>
-          <p>[]</p>
-          <a href="https://revolutionaryloveproject.org" target="_blank">
-            <img src="images/freshco.gif" height="150px" alt="Freshco" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Wordpress</span>
-          </div>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="row-top" style="background-image:url('images/sjs.png');background-size:cover;background-position:top;"  onclick="window.open('https://sarajanesherman.com', '_blank');">
+    </div>
+    <div class="row-bottom">
+      <span>
+        <h4><a href="https://sarajanesherman.com" target="_blank">Sara Jane Sherman</a></h4>
+        <div class="skill-list">
+          <span class="skill">Wix</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">CSS</span>
+          <span class="skill">HTML</span>
         </div>
-        <div class="card shadow p-3 m-2">
-          <h4>See No Stranger</h4>
-          <p>[]</p>
-          <a href="https://seenostranger.com" target="_blank">
-            <img src="images/freshco.gif" height="150px" alt="Freshco" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Ruby on Rails</span>
-            <span class="skill">Node.js</span>
-            <span class="skill">Heroku</span>
-          </div>
+      </span>
+    </div>
+  </div>
+
+
+      <div class="card">
+        <div class="row-top" style="background-image:url('images/riaan.png');background-size:cover;background-position:top;"  onclick="window.open('https://riaanresearch.org', '_blank');">
         </div>
-      -->
-        <div class="card shadow p-3 m-2">
-          <h4>Freshco</h4>
-          <p>Web application to connect with growers in your community.</p>
-          <a href="https://freshx.herokuapp.com" target="_blank">
-            <img src="images/freshco.gif" height="150px" alt="Freshco" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Ruby on Rails</span>
-            <span class="skill">Node.js</span>
-            <span class="skill">Heroku</span>
-          </div>
-        </div>
-        <div class="card shadow p-3 m-2">
-          <h4>Catapult Art</h4>
-          <p>Web application that locates & displays art shared locally</p>
-          <a href="https://github.com/leohque/catapult" target="_blank">
-            <img src="images/catapult.gif" height="150px" alt="Catapult" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Ruby on Rails</span>
-            <span class="skill">Node.js</span>
-            <span class="skill">Heroku</span>
-          </div>
-        </div>
-        <div class="card shadow p-3 m-2">
-          <h4>Cooking With Yao</h4>
-          <p>Portfolio for a freelance Chef and Cooking Instructor</p>
-          <a href="https://cookingwithyao.com" target="_blank">
-            <img src="images/cookingwithyao.gif" height="150px" alt="Cooking With Yao" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Squarespace</span>
-          </div>
-        </div>
-        <div class="card shadow p-3 m-2">
-          <h4>The Shape of Care</h4>
-          <p>A podcast about caregiving</p>
-          <a href="http://theshapeofcare.org" target="_blank">
-            <img src="images/shapeofcare.gif" height="150px" alt="The Shape of Care" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Wordpress</span>
-            <span class="skill">Simplecast</span>
-          </div>
-        </div>
-        <div class="card shadow p-3 m-2">
-          <h4>IQ Latino</h4>
-          <p>News platform that promotes Latino empowerment</p>
-          <a href="https://iqlatino.org" target="_blank">
-            <img src="images/iqlatino.gif" height="150px" alt="IQ Latino" class="m-1 shadow">
-          </a>
-          <div class="pt-3">
-            <span class="skill">Wordpress</span>
-          </div>
+        <div class="row-bottom">
+          <span>
+            <h4><a href="https://riaanresearch.org" target="_blank">Riaan Research Initiative</a></h4>
+            <div class="skill-list">
+              <span class="skill">Wordpress</span>
+              <span class="skill">Elementor</span>
+              <span class="skill">Substack</span>
+              <span class="skill">CSS</span>
+              <span class="skill">HTML</span>
+              <span class="skill">UX</span>
+            </div>
+          </span>
         </div>
       </div>
-    </div>
+      <div class="card">
+        <div class="row-top" style="background-image:url('images/valarie.png');background-size:cover;background-position:top;"  onclick="window.open('https://valariekaur.com', '_blank');">
+        </div>
+        <div class="row-bottom">
+          <span>
+            <h4><a href="https://valariekaur.com" target="_blank">Valarie Kaur</a></h4>
+            <div class="skill-list">
+              <span class="skill">Wordpress</span>
+              <span class="skill">Elementor</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">CSS</span>
+              <span class="skill">HTML</span>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row-top" style="background-image:url('images/bcco.png');background-size:cover;background-position:top;"  onclick="window.open('https://bcco.coop', '_blank');">
+        </div>
+        <div class="row-bottom">
+          <span>
+            <h4><a href="https://bcco.coop" target="_blank">Boston Center for Community Ownership</a></h4>
+            <div class="skill-list">
+              <span class="skill">Wordpress</span>
+              <span class="skill">Elementor</span>
+              <span class="skill">CSS</span>
+              <span class="skill">HTML</span>
+              <span class="skill">Zapier</span>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row-top" style="background-image:url('images/progressive.png');background-size:cover;background-position:top;"  onclick="window.open('https://progressivemass.com', '_blank');">
+        </div>
+        <div class="row-bottom">
+          <span>
+            <h4><a href="https://progressivemass.com" target="_blank">Progressive Massachusetts</a></h4>
+            <div class="skill-list">
+              <span class="skill">Wordpress</span>
+              <span class="skill">Elementor</span>
+              <span class="skill">Action Network</span>
+              <span class="skill">CSS</span>
+              <span class="skill">HTML</span>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row-top" style="background-image:url('images/khmer.png');background-size:cover;background-position:top;"  onclick="window.open('https://khmeridentity.com', '_blank');">
+        </div>
+        <div class="row-bottom">
+          <span>
+            <h4><a href="https://khmeridentity.com" target="_blank">Khmer Identity</a></h4>
+            <div class="skill-list">
+              <span class="skill">Wordpress</span>
+              <span class="skill">Elementor</span>
+              <span class="skill">Eventbrite</span>
+              <span class="skill">MailChimp</span>
+              <span class="skill">CSS</span>
+              <span class="skill">HTML</span>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row-top" style="background-image:url('images/dbe.png');background-size:cover;background-position:top;"  onclick="window.open('https://democracybeyondelections.org', '_blank');">
+        </div>
+        <div class="row-bottom">
+          <span>
+            <h4><a href="https://democracybeyondelections.org" target="_blank">Democracy Beyond Elections</a></h4>
+            <div class="skill-list">
+              <span class="skill">Wordpress</span>
+              <span class="skill">Elementor</span>
+              <span class="skill">Hubspot</span>
+              <span class="skill">Zapier</span>
+              <span class="skill">CSS</span>
+              <span class="skill">HTML</span>
+              <span class="skill">UX</span>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row-top" style="background-image:url('images/houseus.png');background-size:cover;background-position:top;"  onclick="window.open('https://houseus.org', '_blank');">
+        </div>
+        <div class="row-bottom">
+          <span>
+            <h4><a href="https://houseus.org" target="_blank">HouseUS</a></h4>
+            <div class="skill-list">
+              <span class="skill">Wordpress</span>
+              <span class="skill">Elementor</span>
+              <span class="skill">CSS</span>
+              <span class="skill">HTML</span>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row-top" style="background-image:url('images/infinitegrowth.png');background-size:cover;background-position:top;"  onclick="window.open('https://infinitegrowth.rocks', '_blank');">
+        </div>
+        <div class="row-bottom">
+          <span>
+            <h4><a href="https://infinitegrowth.rocks" target="_blank">Infinite Growth</a></h4>
+            <div class="skill-list">
+              <span class="skill">Wordpress</span>
+              <span class="skill">Teachable</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">CSS</span>
+              <span class="skill">HTML</span>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row-top" style="background-image:url('images/njeja.png');background-size:cover;background-position:top;"  onclick="window.open('https://njeja.org', '_blank');">
+        </div>
+        <div class="row-bottom">
+          <span>
+            <h4><a href="https://njeja.org" target="_blank">New Jersey Environmental Justice Alliance</a></h4>
+            <div class="skill-list">
+              <span class="skill">Wordpress</span>
+              <span class="skill">Elementor</span>
+              <span class="skill">Multi-Language</span>
+              <span class="skill">CSS</span>
+              <span class="skill">HTML</span>
+            </div>
+          </span>
+        </div>
+      </div>
+      <!--
+      <div class="card" style="display:none">
+        <div class="row-top" style="background-image:url('images/shapeofcare.png');background-size:cover;background-position:top;"  onclick="window.open('https://theshapeofcare.org', '_blank');">
+        </div>
+        <div class="row-bottom">
+          <span>
+            <h4><a href="https://theshapeofcare.org" target="_blank">The Shape of Care</a></h4>
+            <div class="skill-list">
+              <span class="skill">Wordpress</span>
+              <span class="skill">Simplecast</span>
+              <span class="skill">CSS</span>
+              <span class="skill">HTML</span>
+            </div>
+          </span>
+        </div>
+      </div>
+    -->
+      <div class="card" style="display:none">
+        <div class="row-top" style="background-image:url('images/yao.png');background-size:cover;background-position:top;"  onclick="window.open('https://cookingwithyao.com', '_blank');">
+        </div>
+        <div class="row-bottom">
+          <span>
+            <h4><a href="https://cookingwithyao.com" target="_blank">Cooking With Yao</a></h4>
+            <div class="skill-list">
+              <span class="skill">Squarespace</span>
+              <span class="skill">CSS</span>
+              <span class="skill">HTML</span>
+            </div>
+          </span>
+        </div>
+      </div>
+</section>
+
+    <section class="banner">
+      <h2>Other Involvement</h2>
+    </section>
+
+    <section class="portfolio portfolio-other d-flex flex-wrap justify-content-center">
+
+      <div class="card-large">
+        <h4><a href="https://www.codingwithkids.com/" target="_blank">Coding With Kids</a></h4>
+        <p>Taught K-3 kids how to code using <a href="https://scratch.mit.edu/" target="_blank">Scratch</a> in after-school programming.</p>
+        <div class="d-flex justify-content-center flex-wrap">
+          <figure class="figure">
+            <img src="images/scratch1st.gif" width="350px" alt="GIF showcasing something coded by a 1st grader" class="m-2 shadow" />
+            <figcaption class="figure-caption"><em>Created by a 1st grader</em></figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="images/scratch2nd.gif" width="350px" alt="GIF showcasing something coded by a 2nd grader" class="m-2 shadow" />
+            <figcaption class="figure-caption"><em>Created by a 2nd grader</em></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="card-large xs">
+        <h4><a href="https://thefoodproject.org">The Food Project</a></h4>
+        <p>Co-managed a 32-acre organic vegetable farm that provided fresh produce to food desert communities in Massachusetts.</p>
+        <div class="d-flex justify-content-center flex-wrap">
+          <a href="https://thefoodproject.org/" target="_blank"><img src="images/veggies.png" width="350px" alt="Veggies by The Food Project" class="m-2 shadow" /></a>
+        </div>
+      </div>
+
+
+      <div class="card-large xs">
+        <h4><a href="https://www.instagram.com/eco4youth/" target="_blank">GreenRoots / ECO</a></h4>
+        <p>Co-Managed a youth employment program focused on civic engagement, community empowerment & environmental justice in Chelsea, Massachusetts.</p>
+        <div class="d-flex justify-content-center flex-wrap">
+          <a href="https://www.instagram.com/eco4youth/" target="_blank"><img src="images/eco.png" width="350px" alt="Posters created by ECO" class="m-2 shadow" /></a>
+        </div>
+      </div>
+
+      <div class="card-large xs">
+        <h4><a href="https://www.instagram.com/healthychelseama/" target="_blank">Healthy Chelsea / Youth Food Movement</a></h4>
+        <p>Co-Managed youth employment programs focused on improving the school food, gardens & composting efforts in Chelsea, Massachusetts.</p>
+        <div class="d-flex justify-content-center flex-wrap">
+          <a href="https://www.instagram.com/healthychelseama/" target="_blank"><img src="images/anitas02.jpg" width="250px" alt="Kids gardening at Anita's garden" class="m-2 shadow" /></a>
+        </div>
+      </div>
+
+    </section>
+
+
 
     <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeModalTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -174,16 +534,17 @@
             </button>
           </div>
           <div class="modal-body">
-            <a href="resources/resume.pdf" target="_blank"><img src="images/resume.png" class="w-100"></a>
+            <a href="resources/resume.pdf" target="_blank"><img src="images/resume1.png" class="w-100"><br>Download PDF</a>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
-    </div>
+    </div> <!-- end resume popup -->
 
     <div class="text-center">
+      <h3 class="text-white">Let's work together! 🤗<br>Feel free to reach out~</h5>
       <ul id="social-links">
         <li><a href="https://github.com/leohque" target="_blank"><i class="fab fa-github-square"></i></a></li>
         <li><a href="https://www.linkedin.com/in/leopoldoh/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
@@ -192,8 +553,6 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="/application.js"></script>
   </body>
 </html>
